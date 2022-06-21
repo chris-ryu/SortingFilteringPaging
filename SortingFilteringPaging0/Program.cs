@@ -12,7 +12,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase(databaseName: "SortingFilteringPaging"));
 
-
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
