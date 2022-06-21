@@ -50,21 +50,6 @@ namespace SortingFilteringPaging.Controllers
             var gte = this.HttpContext.Request.Query.Where(x => x.Key.Contains("_gte"));
             var codeFields = this.HttpContext.Request.Query.Where(x => x.Key.Contains("__"));
             var textFields = this.HttpContext.Request.Query.Where(x => x.Key.Contains("_like"));
-            var asc = this.HttpContext.Request.Query.Where(x => x.Key.Contains("_asc"));
-
-            if (asc != null)
-            {
-                foreach (var item in asc)
-                {
-                    filters.Add(new Filter
-                    {
-                        PropertyName = item.Key.Remove(item.Key.IndexOf("_asc")),
-                        Operation = Op.Asc,
-                        Value = long.Parse(item.Value)
-                    });
-                    _logger.LogDebug($"ListBaseController filer asc Key : {item.Key}, Value : {item.Value}");
-                }
-            }
 
             if (lte != null)
             {
