@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
-namespace SortingFilteringPaging0.Models
+namespace SortingFilteringPaging.Models
 {
     public static class SeedData
     {

@@ -1,6 +1,6 @@
 using JWTExample.Models;
 using Microsoft.EntityFrameworkCore;
-using SortingFilteringPaging0.Models;
+using SortingFilteringPaging.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase(databaseName: "SortingFilteringPaging"));
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

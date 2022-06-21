@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using SortingFilteringPaging0.Models;
+using SortingFilteringPaging.Models;
 
 namespace JWTExample.Models
 {

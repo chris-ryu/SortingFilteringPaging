@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "SortingFilteringPaging0": {
+    "SortingFilteringPaging": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
