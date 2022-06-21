@@ -1,4 +1,4 @@
-﻿namespace SortingFilteringPaging0.Models
+﻿namespace SortingFilteringPaging.Models
 {
     public class Employee
     {
